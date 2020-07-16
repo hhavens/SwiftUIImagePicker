@@ -16,6 +16,7 @@
 		F1CE49DA24C0A69D009651C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CE49D824C0A69D009651C6 /* LaunchScreen.storyboard */; };
 		F1CE49E524C0A69E009651C6 /* SwiftUIImagePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE49E424C0A69E009651C6 /* SwiftUIImagePickerTests.swift */; };
 		F1CE49F024C0A69E009651C6 /* SwiftUIImagePickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE49EF24C0A69E009651C6 /* SwiftUIImagePickerUITests.swift */; };
+		F1CE49FE24C0A707009651C6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE49FD24C0A707009651C6 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F1CE49EB24C0A69E009651C6 /* SwiftUIImagePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIImagePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CE49EF24C0A69E009651C6 /* SwiftUIImagePickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIImagePickerUITests.swift; sourceTree = "<group>"; };
 		F1CE49F124C0A69E009651C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1CE49FD24C0A707009651C6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				F1CE49CA24C0A692009651C6 /* AppDelegate.swift */,
-				F1CE49CC24C0A692009651C6 /* SceneDelegate.swift */,
-				F1CE49D124C0A692009651C6 /* ContentView.swift */,
 				F1CE49D324C0A69D009651C6 /* Assets.xcassets */,
-				F1CE49D824C0A69D009651C6 /* LaunchScreen.storyboard */,
+				F1CE49D124C0A692009651C6 /* ContentView.swift */,
+				F1CE49FD24C0A707009651C6 /* ImagePicker.swift */,
 				F1CE49DB24C0A69D009651C6 /* Info.plist */,
-				F1CE49CE24C0A692009651C6 /* SwiftUIImagePicker.xcdatamodeld */,
+				F1CE49D824C0A69D009651C6 /* LaunchScreen.storyboard */,
 				F1CE49D524C0A69D009651C6 /* Preview Content */,
+				F1CE49CC24C0A692009651C6 /* SceneDelegate.swift */,
+				F1CE49CE24C0A692009651C6 /* SwiftUIImagePicker.xcdatamodeld */,
 			);
 			path = SwiftUIImagePicker;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				F1CE49CB24C0A692009651C6 /* AppDelegate.swift in Sources */,
 				F1CE49D024C0A692009651C6 /* SwiftUIImagePicker.xcdatamodeld in Sources */,
+				F1CE49FE24C0A707009651C6 /* ImagePicker.swift in Sources */,
 				F1CE49D224C0A692009651C6 /* ContentView.swift in Sources */,
 				F1CE49CD24C0A692009651C6 /* SceneDelegate.swift in Sources */,
 			);
