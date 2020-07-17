@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CE4985E72E3D74C8DB29269 /* Pods_SwiftUIImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB3FBCAF8F1C038EC3417A2 /* Pods_SwiftUIImagePicker.framework */; };
+		88E727A2F2718AB8BB5CEC39 /* Pods_SwiftUIImagePickerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1797866CC605CA8342309936 /* Pods_SwiftUIImagePickerTests.framework */; };
+		E6AB7864570B741EDC63D5F2 /* Pods_SwiftUIImagePicker_SwiftUIImagePickerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D91DF6D8C45727DE6DB087F /* Pods_SwiftUIImagePicker_SwiftUIImagePickerUITests.framework */; };
 		F1CE49CB24C0A692009651C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE49CA24C0A692009651C6 /* AppDelegate.swift */; };
 		F1CE49CD24C0A692009651C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE49CC24C0A692009651C6 /* SceneDelegate.swift */; };
 		F1CE49D024C0A692009651C6 /* SwiftUIImagePicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1CE49CE24C0A692009651C6 /* SwiftUIImagePicker.xcdatamodeld */; };
@@ -17,6 +20,7 @@
 		F1CE49E524C0A69E009651C6 /* SwiftUIImagePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE49E424C0A69E009651C6 /* SwiftUIImagePickerTests.swift */; };
 		F1CE49F024C0A69E009651C6 /* SwiftUIImagePickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE49EF24C0A69E009651C6 /* SwiftUIImagePickerUITests.swift */; };
 		F1CE49FE24C0A707009651C6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE49FD24C0A707009651C6 /* ImagePicker.swift */; };
+		F1CE4A0024C0DBBF009651C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1CE49FF24C0DBBF009651C6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BB3FBCAF8F1C038EC3417A2 /* Pods_SwiftUIImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1797866CC605CA8342309936 /* Pods_SwiftUIImagePickerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIImagePickerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D91DF6D8C45727DE6DB087F /* Pods_SwiftUIImagePicker_SwiftUIImagePickerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIImagePicker_SwiftUIImagePickerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4263596C54A98C415F967FAA /* Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests/Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		689E47FCD235F5E8F9D14C0E /* Pods-SwiftUIImagePickerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIImagePickerTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIImagePickerTests/Pods-SwiftUIImagePickerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C50A4F7229355746CF5ACDE /* Pods-SwiftUIImagePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIImagePicker.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIImagePicker/Pods-SwiftUIImagePicker.release.xcconfig"; sourceTree = "<group>"; };
+		9EC80A15FC4D2D6D3586A17E /* Pods-SwiftUIImagePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIImagePicker.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIImagePicker/Pods-SwiftUIImagePicker.debug.xcconfig"; sourceTree = "<group>"; };
+		D255F28342BFBC3A1375BE0B /* Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests/Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F1CE49C724C0A692009651C6 /* SwiftUIImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CE49CA24C0A692009651C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1CE49CC24C0A692009651C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +65,8 @@
 		F1CE49EF24C0A69E009651C6 /* SwiftUIImagePickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIImagePickerUITests.swift; sourceTree = "<group>"; };
 		F1CE49F124C0A69E009651C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1CE49FD24C0A707009651C6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F1CE49FF24C0DBBF009651C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FC5A682AB088E51217A5C539 /* Pods-SwiftUIImagePickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIImagePickerTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIImagePickerTests/Pods-SwiftUIImagePickerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE4985E72E3D74C8DB29269 /* Pods_SwiftUIImagePicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88E727A2F2718AB8BB5CEC39 /* Pods_SwiftUIImagePickerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,19 +90,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6AB7864570B741EDC63D5F2 /* Pods_SwiftUIImagePicker_SwiftUIImagePickerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59D0051061B536E571863F36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EC80A15FC4D2D6D3586A17E /* Pods-SwiftUIImagePicker.debug.xcconfig */,
+				9C50A4F7229355746CF5ACDE /* Pods-SwiftUIImagePicker.release.xcconfig */,
+				D255F28342BFBC3A1375BE0B /* Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests.debug.xcconfig */,
+				4263596C54A98C415F967FAA /* Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests.release.xcconfig */,
+				689E47FCD235F5E8F9D14C0E /* Pods-SwiftUIImagePickerTests.debug.xcconfig */,
+				FC5A682AB088E51217A5C539 /* Pods-SwiftUIImagePickerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B5699CB4B09E7DE7DB316E26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BB3FBCAF8F1C038EC3417A2 /* Pods_SwiftUIImagePicker.framework */,
+				3D91DF6D8C45727DE6DB087F /* Pods_SwiftUIImagePicker_SwiftUIImagePickerUITests.framework */,
+				1797866CC605CA8342309936 /* Pods_SwiftUIImagePickerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F1CE49BE24C0A692009651C6 = {
 			isa = PBXGroup;
 			children = (
+				F1CE49FF24C0DBBF009651C6 /* GoogleService-Info.plist */,
 				F1CE49C924C0A692009651C6 /* SwiftUIImagePicker */,
 				F1CE49E324C0A69E009651C6 /* SwiftUIImagePickerTests */,
 				F1CE49EE24C0A69E009651C6 /* SwiftUIImagePickerUITests */,
 				F1CE49C824C0A692009651C6 /* Products */,
+				59D0051061B536E571863F36 /* Pods */,
+				B5699CB4B09E7DE7DB316E26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1CE49F424C0A69E009651C6 /* Build configuration list for PBXNativeTarget "SwiftUIImagePicker" */;
 			buildPhases = (
+				F5893988D4415E3199921D24 /* [CP] Check Pods Manifest.lock */,
 				F1CE49C324C0A692009651C6 /* Sources */,
 				F1CE49C424C0A692009651C6 /* Frameworks */,
 				F1CE49C524C0A692009651C6 /* Resources */,
+				C1F576524F81433846205965 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1CE49F724C0A69E009651C6 /* Build configuration list for PBXNativeTarget "SwiftUIImagePickerTests" */;
 			buildPhases = (
+				191BD8C7D2FBC4BB15C604F3 /* [CP] Check Pods Manifest.lock */,
 				F1CE49DC24C0A69E009651C6 /* Sources */,
 				F1CE49DD24C0A69E009651C6 /* Frameworks */,
 				F1CE49DE24C0A69E009651C6 /* Resources */,
@@ -184,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1CE49FA24C0A69E009651C6 /* Build configuration list for PBXNativeTarget "SwiftUIImagePickerUITests" */;
 			buildPhases = (
+				5BBCAD6B3B161A0E55D8B6C5 /* [CP] Check Pods Manifest.lock */,
 				F1CE49E724C0A69E009651C6 /* Sources */,
 				F1CE49E824C0A69E009651C6 /* Frameworks */,
 				F1CE49E924C0A69E009651C6 /* Resources */,
+				DED09E0E2624BF60450AA533 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1CE49DA24C0A69D009651C6 /* LaunchScreen.storyboard in Resources */,
+				F1CE4A0024C0DBBF009651C6 /* GoogleService-Info.plist in Resources */,
 				F1CE49D724C0A69D009651C6 /* Preview Assets.xcassets in Resources */,
 				F1CE49D424C0A69D009651C6 /* Assets.xcassets in Resources */,
 			);
@@ -267,6 +316,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		191BD8C7D2FBC4BB15C604F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIImagePickerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BBCAD6B3B161A0E55D8B6C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1F576524F81433846205965 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIImagePicker/Pods-SwiftUIImagePicker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIImagePicker/Pods-SwiftUIImagePicker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIImagePicker/Pods-SwiftUIImagePicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DED09E0E2624BF60450AA533 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests/Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests/Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests/Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5893988D4415E3199921D24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIImagePicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F1CE49C324C0A692009651C6 /* Sources */ = {
@@ -440,6 +592,7 @@
 		};
 		F1CE49F524C0A69E009651C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EC80A15FC4D2D6D3586A17E /* Pods-SwiftUIImagePicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -460,6 +613,7 @@
 		};
 		F1CE49F624C0A69E009651C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C50A4F7229355746CF5ACDE /* Pods-SwiftUIImagePicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -480,6 +634,7 @@
 		};
 		F1CE49F824C0A69E009651C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 689E47FCD235F5E8F9D14C0E /* Pods-SwiftUIImagePickerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +657,7 @@
 		};
 		F1CE49F924C0A69E009651C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC5A682AB088E51217A5C539 /* Pods-SwiftUIImagePickerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,6 +680,7 @@
 		};
 		F1CE49FB24C0A69E009651C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D255F28342BFBC3A1375BE0B /* Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -544,6 +701,7 @@
 		};
 		F1CE49FC24C0A69E009651C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4263596C54A98C415F967FAA /* Pods-SwiftUIImagePicker-SwiftUIImagePickerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
