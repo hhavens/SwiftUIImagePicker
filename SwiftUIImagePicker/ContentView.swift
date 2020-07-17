@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import FirebaseStorage
 
 struct ContentView: View {
     
@@ -15,22 +16,36 @@ struct ContentView: View {
     
     @State var sourceType:UIImagePickerController.SourceType = .camera
     
-    @State var image:UIImage?
+    @State var upload_image:UIImage?
+    @State var download_image:UIImage?
     
     var body: some View {
         VStack {
-            if image != nil {
-                Image(uiImage: image!)
+            HStack {
+            if upload_image != nil {
+                Image(uiImage: upload_image!)
                 .resizable()
                 .scaledToFit()
-                    .frame(width: 300, height: 300)
+                    .frame(width: 120, height: 120)
             } else {
                 Image(systemName: "person.circle")
                 .resizable()
                 .scaledToFit()
-                    .frame(width: 300, height: 300)
+                    .frame(width: 120, height: 120)
             }
-            
+                Spacer()
+            if download_image != nil {
+                    Image(uiImage: download_image!)
+                    .resizable()
+                    .scaledToFit()
+                        .frame(width: 120, height: 120)
+                } else {
+                    Image(systemName: "person.circle")
+                    .resizable()
+                    .scaledToFit()
+                        .frame(width: 120, height: 120)
+                }
+            }.padding()
             Button(action: {
                 self.showActionSheet.toggle()
             }) {
@@ -55,9 +70,51 @@ struct ContentView: View {
                                 .cancel()
                 ])
             }.sheet(isPresented: $showImagePicker) {
-                imagePicker(image: self.$image, showImagePicker: self.$showImagePicker, sourceType: self.sourceType)
+                imagePicker(image: self.$upload_image, showImagePicker: self.$showImagePicker, sourceType: self.sourceType)
+            }
+            Button(action: {
+                if let thisImage = self.upload_image {
+                    uploadImage(image: thisImage)
+                } else {
+                    print("Couldn't upload image - No image present")
+                }
+            }) {
+                Text("Upload Image")
+            }
+            
+            Button(action: {
+                Storage.storage().reference().child("temp").getData(maxSize: 3 * 1024 * 1024) {
+                    (imageData, err) in
+                    if let err = err {
+                        print("An error has occurred - \(err.localizedDescription)")
+                    } else {
+                        if let imageData = imageData {
+                            self.download_image = UIImage(data: imageData)
+                        } else {
+                            print("Couldn't unwrap image data image")
+                        }
+                    }
+                }
+            }) {
+                Text("Download Image")
             }
         }
+    }
+}
+
+func uploadImage(image:UIImage){
+    if let imageData = image.jpegData(compressionQuality: 1){
+        let storage = Storage.storage()
+        storage.reference().child("temp").putData(imageData, metadata: nil){
+            (_, err) in
+            if let err = err {
+                print("An error has occurred - \(err.localizedDescription)")
+            } else {
+                print("Image uploaded successfully")
+            }
+        }
+    } else {
+        print("Couldn't unwrap image to data")
     }
 }
 
